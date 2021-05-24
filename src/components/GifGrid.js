@@ -10,15 +10,16 @@ export const GifGrid = ({ category }) => {
 
     return (
         <>
+            <div className="wrapper">
             <MetaTags>
-                <title>Page 12</title>
-                <meta name="description" content="Some description." />
-                <meta property="og:url" content="produccion.url.com" />
-                <meta property="og:type" content="website" />
-                <meta property="og:title" content={`Buscamos hacer el meta`} />
-                <meta property="og:description" content="implementando los metas" />
-                <meta property="og:image" content={`images/balanz.jpg`} />
+            <title>Page 1</title>
+            <meta property="og:url" content="https://3liuhernandez.github.io/react-gifsExpertApp/" />
+            <meta name="description" content="Some description." />
+            <meta property="og:title" content="MyApp" />
+            <meta property="og:image" content="images/balanz.jpg" />
             </MetaTags>
+            <div className="content"> Some Content </div>
+            </div>
 
             <h3 className="animate__animated animate__backInLeft"> { category } </h3>
             <img src="images/balanz.jpg" />
