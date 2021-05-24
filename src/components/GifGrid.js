@@ -6,6 +6,7 @@ import MetaTags from 'react-meta-tags';
 
 import {Helmet} from "react-helmet";
 
+import image__ from '../images/balanz.jpg';
 export const GifGrid = ({ category }) => {
 
     const { data:gifs, loading } = useFetchGifs( category );
@@ -23,7 +24,7 @@ export const GifGrid = ({ category }) => {
             <meta property="og:title" content="OROPEnSAndo" /> 
             <meta property="og:type" content="website" /> 
             <meta property="og:url" content="http://oropensando.com/" />
-            <meta property="og:image" content="https://3liuhernandez.github.io/react-gifsExpertApp/images/balanz.jpg" />
+            <meta property="og:image" content={image__}/>
             <meta property="og:description" content="Otra web de desarrollo web" /> 
             <meta property="og:site_name" content="Oropensando" />
             <meta property="og:locale" content="es_ES" />
@@ -35,7 +36,7 @@ export const GifGrid = ({ category }) => {
             <meta name="twitter:title" content="OROPEnSAndo" /> 
             <meta name="twitter:description" content="Otra web de desarrollo web" /> 
             <meta name="twitter:creator" content="@oropensando" /> 
-            <meta name="twitter:image:src" content="https://3liuhernandez.github.io/react-gifsExpertApp/images/balanz.jpg" />
+            <meta name="twitter:image:src" content={image__} />
             </MetaTags>
 
             {/* <Helmet>
