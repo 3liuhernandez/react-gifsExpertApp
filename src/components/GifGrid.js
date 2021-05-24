@@ -4,22 +4,33 @@ import { useFetchGifs } from "../hooks/useFetchGifs";
 
 import MetaTags from 'react-meta-tags';
 
+import {Helmet} from "react-helmet";
+
 export const GifGrid = ({ category }) => {
 
     const { data:gifs, loading } = useFetchGifs( category );
 
     return (
         <>
-            <div className="wrapper">
             <MetaTags>
-            <title>Page 1</title>
-            <meta property="og:url" content="https://3liuhernandez.github.io/react-gifsExpertApp/" />
-            <meta name="description" content="Some description." />
-            <meta property="og:title" content="MyApp" />
-            <meta property="og:image" content="images/balanz.jpg" />
+                <title>My METADATOS</title>
+                <link rel="canonical" href="https://3liuhernandez.github.io/react-gifsExpertApp/" />
+                <meta property="og:description" content="Nested METADATOS" />
+                <meta property="og:image" content="images/balanz.jpg" />
+                <meta property="og:title" content="METADATOS" />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://3liuhernandez.github.io/react-gifsExpertApp/" />
             </MetaTags>
-            <div className="content"> Some Content </div>
-            </div>
+
+            <Helmet>
+                <title>My METADATOS</title>
+                <link rel="canonical" href="https://3liuhernandez.github.io/react-gifsExpertApp/" />
+                <meta property="og:description" content="Nested METADATOS" />
+                <meta property="og:image" content="images/balanz.jpg" />
+                <meta property="og:title" content="METADATOS" />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://3liuhernandez.github.io/react-gifsExpertApp/" />
+            </Helmet>
 
             <h3 className="animate__animated animate__backInLeft"> { category } </h3>
             <img src="images/balanz.jpg" />
