@@ -63,15 +63,20 @@ const GifExpertApp = () => {
 
             <Helmet>
                 {/* <meta charSet="utf-8" /> */}
-                <title>Buscamos Gente</title>
+                <title>Buscamos Desarrollador iOS</title>
+                <meta name="description" content="Entre sus principales responsabilidades se" />
+                <meta name="image" content={image__} />
+                <meta name="title" content="Buscamos Desarrollador iOS" />
+                <meta name="type" content="website" />
+                <meta name="url" content="https://rrhh.balanz.com/aplicar/33" />
+                <link rel="canonical" href="https://rrhh.balanz.com/" />
                 {/* <meta name="description" content="Helmet application" /> */}
                 <meta property="og:url" content="https://rrhh.balanz.com/aplicar/33" />
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content="Buscamos Desarrollador iOS" />
                 <meta property="og:description" content="Entre sus principales responsabilidades se" />
                 <meta property="og:image" content={image__} />
-                
-                <link rel="canonical" href="http://mysite.com/example" />
+                <link property="og:canonical" rel="canonical" href="https://rrhh.balanz.com/" />
 
                 {/* <meta property="og:title" content={'Hola'} />
                 <meta property="og:type" content={'website'} />
