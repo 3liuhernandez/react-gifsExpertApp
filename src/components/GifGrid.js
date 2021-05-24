@@ -13,7 +13,33 @@ export const GifGrid = ({ category }) => {
 
     return (
         <>
-            <MetaTags>
+            {/* <MetaTags>
+            <title>My METADATOS AAAA</title>
+
+            <meta name="description" content="Otra web de desarrollo web AAAA" />
+
+            <link rel="canonical" href="http://oropensando.com/" />
+
+            // Open Graph para Facebook
+            <meta property="og:title" content="OROPEnSAndo" /> 
+            <meta property="og:type" content="website" /> 
+            <meta property="og:url" content="http://oropensando.com/" />
+            <meta property="og:image" content={image__}/>
+            <meta property="og:description" content="Otra web de desarrollo web" /> 
+            <meta property="og:site_name" content="Oropensando" />
+            <meta property="og:locale" content="es_ES" />
+            <meta property="fb:admins" content="Facebook ID" />
+
+            // Twitter Card
+            <meta name="twitter:card" content="summary_large_image"/> 
+            <meta name="twitter:site" content="@oropensando" /> 
+            <meta name="twitter:title" content="OROPEnSAndo" /> 
+            <meta name="twitter:description" content="Otra web de desarrollo web" /> 
+            <meta name="twitter:creator" content="@oropensando" /> 
+            <meta name="twitter:image:src" content={image__} />
+            </MetaTags> */}
+
+            <Helmet>
             <title>My METADATOS AAAA</title>
 
             <meta name="description" content="Otra web de desarrollo web AAAA" />
@@ -37,33 +63,7 @@ export const GifGrid = ({ category }) => {
             <meta name="twitter:description" content="Otra web de desarrollo web" /> 
             <meta name="twitter:creator" content="@oropensando" /> 
             <meta name="twitter:image:src" content={image__} />
-            </MetaTags>
-
-            {/* <Helmet>
-                <title>My METADATOS AAAA</title>
-
-                <meta name="description" content="Otra web de desarrollo web AAAA" />
-
-                <link rel="canonical" href="http://oropensando.com/" />
-
-                // Open Graph para Facebook
-                <meta property="og:title" content="OROPEnSAndo" /> 
-                <meta property="og:type" content="website" /> 
-                <meta property="og:url" content="http://oropensando.com/" />
-                <meta property="og:image" content="https://3liuhernandez.github.io/react-gifsExpertApp/images/balanz.jpg" />
-                <meta property="og:description" content="Otra web de desarrollo web" /> 
-                <meta property="og:site_name" content="Oropensando" />
-                <meta property="og:locale" content="es_ES" />
-                <meta property="fb:admins" content="Facebook ID" />
-
-                // Twitter Card
-                <meta name="twitter:card" content="summary_large_image"/> 
-                <meta name="twitter:site" content="@oropensando" /> 
-                <meta name="twitter:title" content="OROPEnSAndo" /> 
-                <meta name="twitter:description" content="Otra web de desarrollo web" /> 
-                <meta name="twitter:creator" content="@oropensando" /> 
-                <meta name="twitter:image:src" content="https://3liuhernandez.github.io/react-gifsExpertApp/images/balanz.jpg" />
-            </Helmet> */}
+            </Helmet>
 
 
 
