@@ -1,11 +1,7 @@
 import { useState } from 'react';
 import AddCategory from './components/AddCategory';
 import { GifGrid } from './components/GifGrid';
-import MetaTags from 'react-meta-tags';
 
-import {Helmet} from "react-helmet";
-
-import image__ from './images/balanz.jpg';
 const GifExpertApp = () => {
 
     const [categories, setCategories] = useState(['One Punch']);
@@ -33,56 +29,6 @@ const GifExpertApp = () => {
                     ))
                 }
             </ol>
-
-            
-            {/* <MetaTags>
-            <title>My METADATOS AAAA</title>
-
-            <meta name="description" content="Otra web de desarrollo web AAAA" />
-
-            <link rel="canonical" href="http://oropensando.com/" />
-
-            // Open Graph para Facebook
-            <meta property="og:title" content="OROPEnSAndo" /> 
-            <meta property="og:type" content="website" /> 
-            <meta property="og:url" content="http://oropensando.com/" />
-            <meta property="og:image" content={image__}/>
-            <meta property="og:description" content="Otra web de desarrollo web" /> 
-            <meta property="og:site_name" content="Oropensando" />
-            <meta property="og:locale" content="es_ES" />
-            <meta property="fb:admins" content="Facebook ID" />
-
-            // Twitter Card
-            <meta name="twitter:card" content="summary_large_image"/> 
-            <meta name="twitter:site" content="@oropensando" /> 
-            <meta name="twitter:title" content="OROPEnSAndo" /> 
-            <meta name="twitter:description" content="Otra web de desarrollo web" /> 
-            <meta name="twitter:creator" content="@oropensando" /> 
-            <meta name="twitter:image:src" content={image__} />
-            </MetaTags> */}
-
-            <Helmet>
-                {/* <meta charSet="utf-8" /> */}
-                <title>Buscamos Desarrollador iOS</title>
-                <meta name="description" content="Entre sus principales responsabilidades se" />
-                <meta name="image" content={image__} />
-                <meta name="title" content="Buscamos Desarrollador iOS" />
-                <meta name="type" content="website" />
-                <meta name="url" content="https://rrhh.balanz.com/aplicar/33" />
-                <link rel="canonical" href="https://rrhh.balanz.com/" />
-                {/* <meta name="description" content="Helmet application" /> */}
-                <meta property="og:url" content="https://rrhh.balanz.com/aplicar/33" />
-                <meta property="og:type" content="website" />
-                <meta property="og:title" content="Buscamos Desarrollador iOS" />
-                <meta property="og:description" content="Entre sus principales responsabilidades se" />
-                <meta property="og:image" content={image__} />
-                <link property="og:canonical" rel="canonical" href="https://rrhh.balanz.com/" />
-
-                {/* <meta property="og:title" content={'Hola'} />
-                <meta property="og:type" content={'website'} />
-                <meta property="og:image" content="{Your content}" />
-                <meta property="og:url" content="{Your content}" /> */}
-            </Helmet>
         </>
     )
 }
