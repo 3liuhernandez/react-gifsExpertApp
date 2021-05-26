@@ -28,7 +28,7 @@ export const getPageMetadata = ( ) => {
         title: defaultData?.title,
         description: defaultData?.description,
         keywords: defaultData?.keywords,
-        robots: defaultData?.canonicalUrl,
+        robots: defaultData?.robots,
         canonicalUrl: defaultData?.canonicalUrl,
     };
 };
@@ -45,21 +45,22 @@ const MetaTags = () => {
             <link rel="manifest" href="./manifest.json" />
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
             <link rel="stylesheet" href="./index.css"/>
-            <title>{meta.title}</title>
-            <meta name="description" content={meta.description} />
-            <meta name="keywords" content={meta.keywords} />
-            {meta.robots && <meta name="robots" content={meta.robots} />}
-            <link rel="canonical" href={meta.canonicalUrl} />
-            <meta name="imagen" content={meta.imagen} />
 
-            <mata property="og:title" content="Factores de posicionamiento de Google: 10 herramientas que te ayudarán"/>
-            <meta property="og.type" content="website"/>
-            <meta property="og:description" content="aqui va el contenido"/>
-            <meta property="og:image" content="https://3liuhernandez.github.io/react-gifsExpertApp/images/balanz.jpg" />
+            <title>mi titulo de pagina</title>
+            <meta name="title" content="mi titulo de pagina" />
+            <meta name="description" content="esta es una descripcion" />
+
+            <meta property="og:type" content="website" />
             <meta property="og:url" content="https://gomuf.com" />
-            <meta property="og:site_name" content="https://gomuf.com" />
+            <meta property="og:title" content="mi titulo de pagina" />
+            <meta property="og:description" content="esta es una descripcion" />
+            <meta property="og:image" content="https://3liuhernandez.github.io/react-gifsExpertApp/images/balanz.jpg" />
 
-            
+            <meta property="twitter:card" content="summary_large_image" />
+            <meta property="twitter:url" content="https://gomuf.com" />
+            <meta property="twitter:title" content="mi titulo de pagina" />
+            <meta property="twitter:description" content="esta es una descripcion" />
+            <meta property="twitter:image" content="https://3liuhernandez.github.io/react-gifsExpertApp/images/balanz.jpg" />
 
         </Helmet>
     );
